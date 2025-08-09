@@ -1,31 +1,67 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Para saber mais: sinalizações em arquivos do VSCode</title>
-  <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height:1.6; margin:2rem; color:#111 }
-    header { margin-bottom:1rem }
-    textarea {
-      width:100%;
-      min-height:300px;
-      padding:1rem;
-      font-size:1rem;
-      box-sizing:border-box;
-      border-radius:8px;
-      border:1px solid #ccc;
-      resize:vertical;
-    }
-    .actions { margin-top:.6rem; display:flex; gap:.6rem; align-items:center }
-    button { padding:.6rem 1rem; border-radius:8px; border:0; cursor:pointer }
-    .note { color:#666; font-size:.9rem }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Para saber mais: sinalizações em arquivos do VSCode</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            line-height: 1.6;
+            margin: 2rem;
+            color: #111;
+        }
+        header { margin-bottom: 1rem; }
+        textarea {
+            width: 100%;
+            min-height: 300px;
+            padding: 1rem;
+            font-size: 1rem;
+            box-sizing: border-box;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            resize: vertical;
+        }
+        .actions { margin-top: .6rem; display: flex; gap: .6rem; align-items: center; }
+        button { padding: .6rem 1rem; border-radius: 8px; border: 0; cursor: pointer; }
+        .note { color: #666; font-size: .9rem; }
+
+        /* Estilo para a imagem */
+        .image-container {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Para saber mais: sinalizações em arquivos do VSCode</h1>
-    <p class="note">Quando estamos trabalhando em um projeto utilizando o versionamento Git e a 
-        IDE VSCode, ao adicionar ou alterar algum arquivo aparece uma sinalização ao lado do nome
-         desses arquivos no VSCode, como podemos ver na imagem abaixo:</p>
-  </header>
+    <header>
+        <h1>Para saber mais: sinalizações em arquivos do VSCode</h1>
+        <p class="note">
+            Quando estamos trabalhando em um projeto utilizando o versionamento Git e a
+            IDE VSCode, ao adicionar ou alterar algum arquivo aparece uma sinalização ao lado do nome
+            desses arquivos no VSCode, como podemos ver na imagem abaixo:
+        </p>
+    </header>
+
+    <div class="image-container">
+        <img src="foto.png" alt="Exemplo de sinalizações no VSCode">
+    </div>
+</body>
+</html>
+
+<h2>Mas o que isso significa?</h2>
+<p>M : A letra M representa o estado Modified, do português modificado. Isso significa que o arquivo já existia no repositório, mas que
+   recebeu alguma modificação que ainda não foi registrada no Git.
+
+  U : A letra U representa o estado Untracked, do portnão rastreado. Isso significa que o arquivo ainda não existia no repositório e 
+   que ainda não teve seu registro (commit) feito no Git.
+
+</p>
+</header>
